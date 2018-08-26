@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<h1>Witaj na naszej stronie internetowej</h1>
+<a href="/">Dodawanie produktu</a>
+<a href="/user">Dodawnie użytkownika</a>
+
+
+<!--
+ Dodać możliwość dodawania produktu:
+ - nazwę
+ - opis
+ // na następnej stronie będzimy chcieli ten produkt
+ wyświetlić
+    formularz w html odpowiednik Scanner w Javie = do odbioru danych wprowadzonych
+    przez użytkownika
+    name = "description" jest to odpowiednik utworzenia zmiennej
+    w Javie o nazwie description , String description;
+    action, akcje gdzie po kliknięciu w formularz do jakiego adres url ma przejść nasza strona
+-->
+<form action="/display"> <!-- przejśćie do ścieżki /display po kliknięciu -->
+    <label>Podaj nazwę produktu</label>
+    <input type="text" name="name"> <!-- zmienna o nazwie name-->
+    <label>Podaj opis </label>
+    <input type="text" name="description"> <!-- zmienna o nazwie description   -->
+    <input type="submit" value="Dodaj">
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Dodawanie produktu</a>
+<a href="/user">Dodawnie użytkownika</a>
+<h1>Dodany użytkownik o nazwie:</h1>
+<!--
+    user.username tak naprawdę wywołuje linijkę:
+    user.getUsername();
+-->
+<p th:text="${user.username}"></p>
+
+<h2>Adresie email:</h2>
+
+<p th:text="${user.email}"></p>
+<!-- wywołanie getera:
+user.getEmail() UWAGA: nie jest to wywołanie user.email()
+-->
+
+</body>
+</html>

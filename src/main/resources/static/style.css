@@ -1,0 +1,13 @@
+body{
+    background-color: red;
+}
+
+.description{
+    font-size: 15px;
+    color: green;
+}
+
+#header{
+   font-size: 35px;
+   color: yellow;
+}

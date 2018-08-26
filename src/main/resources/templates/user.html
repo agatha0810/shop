@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Użytkownicy</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<a href="/">Strona główna</a>
+<h1>Dodaj użytkownika</h1>
+<!--
+    możemy mieć url /user z METODĄ GET
+    możemy mieć url /uzer z METODĄ POST
+    i dla serwera to są 2 różne żadania HTTP,
+    2 rożne rzeczy mogą być wykonywane
+-->
+
+<form action="/user" method="post">
+    <!-- przejśćie do ścieżki /user po kliknięciu
+    z metodą post, parametry nie widoczne w adresie url przeglądarki
+    -->
+    <label>Podaj nazwę użytkownika</label>
+    <input type="text" name="username"> <!-- zmienna o nazwie username-->
+    <label>Podaj email użytkownika </label>
+    <input type="text" name="email"> <!-- zmienna o nazwie email   -->
+    <input type="submit" value="Dodaj">
+</form>
+
+
+
+
+
+</body>
+</html>

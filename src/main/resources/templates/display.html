@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!--
+id jedno unikalne w dokumencie html
+Javascript pozwala na szybki dostęp do elementów
+id
+-->
+
+<a href="/">Dodawanie produktu</a>
+<a href="/user">Dodawnie użytkownika</a>
+<h1 id="header">Nazwa produktu to</h1>
+
+
+<p class="description" th:text="${result.getName()}"></p>
+<h2>Opis produktu to</h2>
+<p class="description" th:text="${result.getDescription()}"></p>
+
+<!--
+  może być wiele tagów, które mają ustawione
+  konkretną klasę
+-->
+
+
+</body>
+</html>
